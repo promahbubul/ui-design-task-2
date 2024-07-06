@@ -18,7 +18,6 @@
 body {
   background-color: var(--black);
   height: 100vh;
-  border: 2px solid red;
 }
 
 .dashboard {
@@ -31,7 +30,6 @@ body {
 .sidebar {
   width: 24%;
   height: auto;
-  border: 2px solid blue;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -102,4 +100,284 @@ body {
 
 .navbar .active {
   color: white;
+}
+
+/*------------------- Content Area ------------------- */
+.content-area {
+  display: flex;
+  flex-direction: row;
+}
+
+/* --------------- Content Area Left ---------------- */
+.content-area .left {
+  width: 75%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px 50px;
+  overflow: auto;
+  /* border-radius: 0; */
+}
+
+.content-area .left .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-area .left .header .left {
+  border-radius: 0;
+  padding: 0;
+}
+.content-area .left .header .left h1 {
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 0;
+  color: var(--navyBlue);
+}
+.content-area .left .header .left p {
+  color: #878787;
+  margin-top: 10px;
+}
+.content-area .left .header .right {
+  background-color: white;
+  border-radius: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: end;
+}
+
+.content-area .left .header .right .avatar-group {
+  display: flex;
+
+  flex-direction: row;
+  gap: -20px !important;
+}
+
+.content-area .left .header .right .avatar-group img {
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.content-area .left .header .right .add-avatar {
+  cursor: pointer;
+}
+
+/* Status Container */
+.status-container {
+  overflow-y: auto;
+}
+
+/* ---------- Today -------------- */
+.today {
+}
+.today .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #dedede;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.today .heading h1 {
+}
+.today .heading img {
+}
+.today .today-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.today .today-container .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.today .today-container .card .card-left {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+.today .today-container .card .card-left .card-left-content {
+}
+
+.today .today-container .card .card-left .card-left-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #273240;
+}
+.today .today-container .card .card-left .card-left-content p {
+  color: #9fa3a8;
+  font-size: 14px;
+  font-weight: normal;
+}
+.today .today-container .card .card-left img {
+}
+
+.today .today-container .card .card-right {
+}
+.today .today-container .card .card-right p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* --------------- Content Area Right ---------------- */
+.content-area .right {
+  background-color: #f9fafc;
+  border-radius: 0 30px 30px 0;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.content-area .right .right-top {
+}
+
+.content-area .right .right-top h1 {
+  color: var(--navyBlue);
+  font-size: 600;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.content-area .right .right-top .expense-status-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content-area .right .right-top .expense-status-container .expence-card {
+}
+.content-area .right .right-top .expense-status-container .expence-card {
+}
+.content-area .right .right-top .expense-status-container .expence-card .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.content-area
+  .right
+  .right-top
+  .expense-status-container
+  .expence-card
+  .top
+  h4 {
+  color: #273240;
+  font-size: 13px;
+  font-weight: 500;
+}
+.content-area .right .right-top .expense-status-container .expence-card .top p {
+  color: #273240;
+  font-weight: normal;
+  font-size: 13px;
+}
+.content-area
+  .right
+  .right-top
+  .expense-status-container
+  .expence-card
+  .bottom {
+  position: relative;
+}
+.content-area
+  .right
+  .right-top
+  .expense-status-container
+  .expence-card
+  .bottom
+  .status {
+  background: #eceff5;
+  height: 5px;
+  border-radius: 50px;
+}
+.content-area
+  .right
+  .right-top
+  .expense-status-container
+  .expence-card
+  .bottom
+  .status-track {
+  height: 5px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  background: #31ba96;
+}
+
+/* Status Track */
+.shopping {
+  width: 60% !important;
+}
+.housing {
+  width: 40% !important;
+}
+.transpotation {
+  width: 35% !important;
+}
+.vehicales {
+  width: 45% !important;
+}
+
+/*----------Content Section Right Bottom ----------- */
+.content-area .right-bottom {
+  background-color: #edf0f6;
+  padding: 50px 25px 25px 25px;
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+}
+.content-area .right-bottom .images-area {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: flex;
+  padding: 0 25px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.content-area .right-bottom .images-area div {
+}
+
+.content-area .right-bottom .right-bottom-box-content {
+}
+
+.content-area .right-bottom .right-bottom-box-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #273240;
+
+  margin-top: 20px;
+}
+
+.content-area .right-bottom .right-bottom-box-content p {
+  font-size: 12px;
+  font-weight: normal;
+  color: #404852;
+  margin-top: 4px;
+}
+
+.content-area .right-bottom .right-bottom-box-content button {
+  background: var(--black);
+  color: white;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
 }
