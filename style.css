@@ -253,9 +253,6 @@ body {
   flex-direction: column;
   gap: 30px;
   height: calc(100vh - 500px);
-
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 .content-area .right .right-top .expense-status-container .expence-card {
 }
@@ -393,5 +390,10 @@ body {
 .chart-container canvas {
   width: 100% !important;
   margin-top: 20px;
-  /* height: 200px !important; */
+  height: 300px !important;
+}
+
+.right-side-bar {
+  overflow: auto;
+  padding: 20px !important;
 }
