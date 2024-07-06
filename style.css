@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #101010;
+  --navyBlue: #262a41;
+  --red: #dc3434;
+  --silver: #9f9f9f;
+  --gray: #101010;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--black);
+  height: 100vh;
+  border: 2px solid red;
+}
+
+.dashboard {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 24%;
+  height: auto;
+  border: 2px solid blue;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .avatar-container {
+  color: white;
+}
+
+.sidebar .avatar-container h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.sidebar .avatar-container p {
+  font-size: 17px;
+  color: var(--silver);
+}
+.sidebar .avatar-container .avatar {
+  position: relative;
+  width: fit-content;
+}
+
+.sidebar .avatar-container .avatar img {
+}
+
+.sidebar .avatar-container .avatar div {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--red);
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .avatar-container .avatar div span {
+}
+
+.content-area {
+  width: 76%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+/* ----------------- Navbar ----------------- */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--silver);
+  font-size: 25px;
+  font-weight: 600;
+  transition: all ease-in-out 300;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar .active {
+  color: white;
+}
